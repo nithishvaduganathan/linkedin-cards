@@ -1,0 +1,21 @@
+<svg width="500" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .title { font-weight: bold; font-size: 18px; fill: #333; }
+    .content { font-size: 14px; fill: #555; }
+    .date { font-size: 12px; fill: #888; }
+  </style>
+
+  <rect width="100%" height="100%" fill="#ffffff" rx="10" stroke="#e1e4e8" />
+
+  <rect x="20" y="20" width="40" height="40" rx="5" fill="#0077b5" />
+  <text x="30" y="48" fill="white" font-family="Arial" font-weight="bold" font-size="28">in</text>
+
+  <text x="75" y="35" class="text title">Tu Nombre</text>
+  <text x="75" y="55" class="text date">Publicado hace 2 días</text>
+  
+  <text x="20" y="90" class="text content">
+    <tspan x="20" dy="1.2em">Aquí iría el resumen de tu última publicación...</tspan>
+    <tspan x="20" dy="1.4em">GitHub Copilot ahora permite editar...</tspan>
+  </text>
+</svg>
