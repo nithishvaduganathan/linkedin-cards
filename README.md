@@ -1,17 +1,22 @@
 
-
 <a href="https://linkedin.com/in/alexcerezocontreras">
-  <img align="center" width="320px"  src="linkedin-post.svg" />
-</a>
-<a href="https://linkedin.com/in/alexcerezocontreras">
-  <img align="center" width="320px" src="linkedin-post.svg" />
-</a>
-<a href="https://linkedin.com/in/alexcerezocontreras">
-  <img align="center" width="320px" src="linkedin-post.svg" />
-</a>
-
 <picture>
-				<source media="(prefers-color-scheme: light)" src="linkedin-post.svg">
-				<source media="(prefers-color-scheme: dark)" srcset="linkedin-post.svg">
-				<img width="100%" src="linkedin-post.svg" alt="Header">
+				<source align="center" width="320px" media="(prefers-color-scheme: light)" src="linkedin-post-light.svg">
+				<source align="center" width="320px" media="(prefers-color-scheme: dark)" srcset="linkedin-post-dark.svg">
+				<img>
 </picture>
+</a>
+<a href="https://linkedin.com/in/alexcerezocontreras">
+<picture>
+				<source align="center" width="320px" media="(prefers-color-scheme: light)" src="linkedin-post-light.svg">
+				<source align="center" width="320px" media="(prefers-color-scheme: dark)" srcset="linkedin-post-dark.svg">
+				<img>
+</picture>
+</a>
+<a href="https://linkedin.com/in/alexcerezocontreras">
+<picture>
+				<source align="center" width="320px" media="(prefers-color-scheme: light)" src="linkedin-post-light.svg">
+				<source align="center" width="320px" media="(prefers-color-scheme: dark)" srcset="linkedin-post-dark.svg">
+				<img>
+</picture>
+</a>
