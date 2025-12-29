@@ -26,10 +26,6 @@ wheels/
 # Output data (temporal)
 output/
 
-# Keep data folder but ignore specific files
-data/*.json
-!data/linkedin_data_latest.json
-
 # IDE
 .vscode/
 .idea/
