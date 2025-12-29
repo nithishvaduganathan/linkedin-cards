@@ -79,6 +79,17 @@ class LinkedInScraper:
                 except:
                     continue  # Saltar si no se puede verificar el autor
                 
+                # Enlace del post
+                try:
+                    # Buscar el div padre con data-urn
+                    parent_div = post.find_element(By.XPATH, './ancestor::div[@data-urn]')
+                    urn = parent_div.get_attribute('data-urn')
+                    post_data['url'] = f"https://www.linkedin.com/feed/update/{urn}/"
+                except Exception as e1:
+                    if len(posts) == 0:
+                        print(f"  DEBUG: Error extrayendo URN: {e1}")
+                    post_data['url'] = ''
+                
                 # Texto del post
                 try:
                     text_elem = post.find_element(By.CSS_SELECTOR, 'div.update-components-text')
