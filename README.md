@@ -5,8 +5,11 @@
 </picture>
 
 <a href="https://linkedin.com/in/alexcerezocontreras">
-  <img align="center" src="linkedin-post.svg" />
+  <img align="center" width="320px"  src="linkedin-post.svg" />
 </a>
 <a href="https://linkedin.com/in/alexcerezocontreras">
-  <img align="center" src="linkedin-post.svg" />
+  <img align="center" width="320px" src="linkedin-post.svg" />
+</a>
+<a href="https://linkedin.com/in/alexcerezocontreras">
+  <img align="center" width="320px" src="linkedin-post.svg" />
 </a>
