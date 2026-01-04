@@ -114,12 +114,6 @@ That's it! Your README will automatically update with your latest LinkedIn posts
 
 If you want to customize templates or contribute to the project:
 
----
-
-## Advanced Setup (Fork Repository)
-
-If you want to customize templates or contribute to the project:
-
 ### 1. Fork or Clone this Repository
 
 ```bash
