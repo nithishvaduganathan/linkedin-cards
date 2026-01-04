@@ -10,7 +10,7 @@ Automatically generate beautiful LinkedIn post cards and display them in your Gi
 - 🎨 Automatic card generation from LinkedIn posts
 - 🌓 Light and dark theme support
 - 🔄 Daily automatic updates via GitHub Actions
-- 🌍 Multi-language support (English, Spanish...) Feel free to create a pull request adding yours.
+- 🌍 Multi-language support (English, Spanish, French, German...) Feel free to create a pull request adding yours.
 - 📱 Responsive SVG cards
 
 ## Setup
@@ -39,7 +39,7 @@ Go to Settings → Secrets and variables → Actions → Variables → New repos
 |--------------|-------------|---------|
 | `LINKEDIN_USERNAME` | Your LinkedIn username | `johndoe` |
 | `MAX_CARDS_TO_GENERATE` | Maximum number of cards to display | `4` |
-| `LANGUAGE` | Card language (`en`, `es` ...) | `en` |
+| `LANGUAGE` | Card language (`en`, `es`, `fr`, `de` ...) | `en` |
 
 **How to get your Apify API token:**
 1. Create a free account at [apify.com](https://apify.com)
@@ -100,6 +100,8 @@ node scripts/auto-generate.js
 Currently supported languages:
 - English (`en`)
 - Spanish (`es`)
+- French (`fr`)
+- German (`de`)
 
 To change the language, update the `LANGUAGE` variable in your repository settings.
 

@@ -24,10 +24,50 @@ const translations = {
         'year': 'año',
         'years': 'años',
         'ago': 'Hace',
+        'comments': 'comentarios',
         invertOrder: true
     },
     en: {
+        'comments': 'comments',
         invertOrder: false
+    },
+    fr: {
+        'second': 'seconde',
+        'seconds': 'secondes',
+        'minute': 'minute',
+        'minutes': 'minutes',
+        'hour': 'heure',
+        'hours': 'heures',
+        'day': 'jour',
+        'days': 'jours',
+        'week': 'semaine',
+        'weeks': 'semaines',
+        'month': 'mois',
+        'months': 'mois',
+        'year': 'an',
+        'years': 'ans',
+        'ago': 'Il y a',
+        'comments': 'commentaires',
+        invertOrder: true
+    },
+    de: {
+        'second': 'Sekunde',
+        'seconds': 'Sekunden',
+        'minute': 'Minute',
+        'minutes': 'Minuten',
+        'hour': 'Stunde',
+        'hours': 'Stunden',
+        'day': 'Tag',
+        'days': 'Tagen',
+        'week': 'Woche',
+        'weeks': 'Wochen',
+        'month': 'Monat',
+        'months': 'Monaten',
+        'year': 'Jahr',
+        'years': 'Jahren',
+        'ago': 'Vor',
+        'comments': 'Kommentare',
+        invertOrder: true
     }
 };
 
@@ -228,7 +268,8 @@ async function generateCard(post) {
     const language = process.env.LANGUAGE || 'en';
     const time = translateRelativeTime(timeRaw, language);
     const reactions = post.stats.total_reactions;
-    const comments = `${post.stats.comments} ${language === 'es' ? 'comentarios' : 'comments'}`;
+    const commentsText = translations[language]?.comments || 'comments';
+    const comments = `${post.stats.comments} ${commentsText}`;
     
     const imageBase64 = [];
     for (let i = 0; i < Math.min(images.length, 4); i++) {
