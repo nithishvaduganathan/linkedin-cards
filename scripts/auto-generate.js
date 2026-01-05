@@ -133,9 +133,17 @@ function updateReadme(generatedCardsData, maxCards) {
     const readmePath = path.join(USER_REPO_PATH, 'README.md');
     let readme = fs.readFileSync(readmePath, 'utf8');
     
+    // Obtener información del repositorio desde variables de entorno de GitHub Actions
+    const githubRepo = process.env.GITHUB_REPOSITORY || '';
+    const githubBranch = process.env.GITHUB_REF_NAME || 'main';
+    
     const cardHTML = generatedCardsData.map((card, index) => {
-        const lightPath = `cards/${card.timestamp}-light.svg`;
-        const darkPath = `cards/${card.timestamp}-dark.svg`;
+        const lightPath = githubRepo 
+            ? `https://github.com/${githubRepo}/blob/${githubBranch}/cards/${card.timestamp}-light.svg`
+            : `cards/${card.timestamp}-light.svg`;
+        const darkPath = githubRepo 
+            ? `https://github.com/${githubRepo}/blob/${githubBranch}/cards/${card.timestamp}-dark.svg`
+            : `cards/${card.timestamp}-dark.svg`;
         const postUrl = card.url || `https://linkedin.com/in/${process.env.LINKEDIN_USERNAME}`;
         return `  <a href="${postUrl}">
     <picture>
@@ -231,7 +239,7 @@ async function generateCard(post) {
     const name = `${post.author.first_name} ${post.author.last_name || ''}`.trim();
     const bio = post.author.headline || '';
     const profilePicture = await fetchImageAsBase64(post.author.profile_picture);
-    const text = post.text.substring(0, 250);
+    const text = post.text
     const timeRaw = post.posted_at.relative.split('•')[0].trim();
     const language = process.env.LANGUAGE || 'en';
     const time = translateRelativeTime(timeRaw, language);
