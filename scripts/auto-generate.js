@@ -131,11 +131,20 @@ function filterOwnPosts(items, username) {
 
 function updateReadme(generatedCardsData, maxCards) {
     const readmePath = path.join(USER_REPO_PATH, 'README.md');
+    
+    if (!fs.existsSync(readmePath)) {
+        console.error('❌ README.md no encontrado en:', readmePath);
+        return;
+    }
+    
     let readme = fs.readFileSync(readmePath, 'utf8');
     
     // Obtener información del repositorio desde variables de entorno de GitHub Actions
     const githubRepo = process.env.GITHUB_REPOSITORY || '';
     const githubBranch = process.env.GITHUB_REF_NAME || 'main';
+    
+    console.log('📝 Repositorio:', githubRepo || 'No detectado');
+    console.log('🌿 Rama:', githubBranch);
     
     const cardHTML = generatedCardsData.map((card, index) => {
         const lightPath = githubRepo 
@@ -162,12 +171,21 @@ function updateReadme(generatedCardsData, maxCards) {
     const beginIndex = readme.indexOf(beginMarker);
     const endIndex = readme.indexOf(endMarker);
     
+    console.log('🔍 Buscando marcadores en README...');
+    console.log('   Begin marker:', beginMarker, beginIndex !== -1 ? '✓' : '✗');
+    console.log('   End marker:', endMarker, endIndex !== -1 ? '✓' : '✗');
+    
     if (beginIndex !== -1 && endIndex !== -1) {
-        readme = readme.substring(0, beginIndex) + beginMarker + '\n' + fullHTML + '\n' + endMarker + readme.substring(endIndex + endMarker.length);
+        const before = readme.substring(0, beginIndex + beginMarker.length);
+        const after = readme.substring(endIndex);
+        readme = before + '\n' + fullHTML + '\n' + after;
         fs.writeFileSync(readmePath, readme, 'utf8');
-        console.log('README actualizado con las tarjetas');
+        console.log('✅ README actualizado con las tarjetas');
     } else {
-        console.log(`No se encontraron los marcadores ${beginMarker} y ${endMarker} en README.md`);
+        console.error(`❌ No se encontraron los marcadores ${beginMarker} y ${endMarker} en README.md`);
+        console.log('💡 Asegúrate de tener estos comentarios en tu README.md:');
+        console.log(`   ${beginMarker}`);
+        console.log(`   ${endMarker}`);
     }
 }
 
