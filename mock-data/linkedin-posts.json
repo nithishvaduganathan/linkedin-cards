@@ -1,0 +1,303 @@
+[
+  {
+    "urn": "7123456789012345678",
+    "full_urn": "urn:li:ugcPost:7123456789012345678",
+    "posted_at": {
+      "date": "2025-05-15 14:30:20",
+      "relative": "2 days ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1745678901234
+    },
+    "text": "Sample post text content. This is where the LinkedIn post text appears.",
+    "url": "https://www.linkedin.com/posts/username_sample-activity-7123456789012345678-AbCd",
+    "post_type": "regular",
+    "author": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "headline": "CEO at Example Company",
+      "username": "johndoe",
+      "profile_url": "https://www.linkedin.com/in/johndoe",
+      "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+    },
+    "stats": {
+      "total_reactions": 123,
+      "like": 100,
+      "support": 5,
+      "love": 10,
+      "insight": 3,
+      "celebrate": 5,
+      "comments": 15,
+      "reposts": 7
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/sample-image.jpg",
+      "thumbnail": "https://media.licdn.com/dms/image/sample-thumbnail.jpg"
+    }
+  },
+  {
+    "urn": "7123456789987654321",
+    "full_urn": "urn:li:ugcPost:7123456789987654321",
+    "posted_at": {
+      "date": "2025-05-14 10:15:30",
+      "relative": "3 days ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1745578901234
+    },
+    "text": "This is a reshared post with a quote added by the user.",
+    "url": "https://www.linkedin.com/posts/username_example-activity-7123456789987654321-XyZw",
+    "post_type": "regular",
+    "author": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "headline": "CEO at Example Company",
+      "username": "johndoe",
+      "profile_url": "https://www.linkedin.com/in/johndoe",
+      "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+    },
+    "stats": {
+      "total_reactions": 89,
+      "comments": 12
+    }
+  },
+  {
+    "urn": "7123456788765432109",
+    "full_urn": "urn:li:ugcPost:7123456788765432109",
+    "posted_at": {
+      "date": "2025-05-13 16:45:10",
+      "relative": "4 days ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1745478901234
+    },
+    "text": "Excited to announce our new product launch! 🚀 After months of hard work, we're finally ready to share what we've been building. This represents a major milestone for our team and we're incredibly proud of what we've accomplished together.",
+    "url": "https://www.linkedin.com/posts/username_product-launch-activity-7123456788765432109-EfGh",
+    "post_type": "regular",
+    "author": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "headline": "CEO at Example Company",
+      "username": "johndoe",
+      "profile_url": "https://www.linkedin.com/in/johndoe",
+      "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+    },
+    "stats": {
+      "total_reactions": 256,
+      "comments": 34
+    },
+    "media": {
+      "type": "images",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/product-image-1.jpg",
+          "thumbnail": "https://media.licdn.com/dms/image/product-thumb-1.jpg"
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/product-image-2.jpg",
+          "thumbnail": "https://media.licdn.com/dms/image/product-thumb-2.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "urn": "7123456787654321098",
+    "full_urn": "urn:li:ugcPost:7123456787654321098",
+    "posted_at": {
+      "date": "2025-05-12 09:20:45",
+      "relative": "5 days ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1745378901234
+    },
+    "text": "Reflecting on the importance of continuous learning in tech. The industry moves so fast that staying current requires dedication and curiosity. What are you currently learning? I'd love to hear about your learning journey! 📚",
+    "url": "https://www.linkedin.com/posts/username_learning-activity-7123456787654321098-IjKl",
+    "post_type": "regular",
+    "author": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "headline": "CEO at Example Company",
+      "username": "johndoe",
+      "profile_url": "https://www.linkedin.com/in/johndoe",
+      "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+    },
+    "stats": {
+      "total_reactions": 78,
+      "comments": 9
+    }
+  }
+]
+        "post_type": "quote",
+        "author": {
+          "first_name": "John",
+          "last_name": "Doe",
+          "headline": "CEO at Example Company",
+          "username": "johndoe",
+          "profile_url": "https://www.linkedin.com/in/johndoe",
+          "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+        },
+        "stats": {
+          "total_reactions": 45,
+          "like": 40,
+          "support": 0,
+          "love": 3,
+          "insight": 1,
+          "celebrate": 1,
+          "comments": 5,
+          "reposts": 2
+        },
+        "reshared_post": {
+          "urn": "7123456788888888888",
+          "posted_at": {
+            "date": "2025-05-13 09:30:00",
+            "relative": "4 days ago • Visible to anyone on or off LinkedIn",
+            "timestamp": 1745488901234
+          },
+          "text": "Original post that was reshared.",
+          "url": "https://www.linkedin.com/posts/janedoe_example-activity-7123456788888888888-AbCd",
+          "post_type": "regular",
+          "author": {
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "headline": "Product Manager at Example Corp",
+            "username": "janedoe",
+            "profile_url": "https://www.linkedin.com/in/janedoe",
+            "profile_picture": "https://media.licdn.com/dms/image/jane-profile-pic.jpg"
+          },
+          "stats": {
+            "total_reactions": 250,
+            "like": 200,
+            "support": 10,
+            "love": 25,
+            "insight": 5,
+            "celebrate": 10,
+            "comments": 30,
+            "reposts": 15
+          },
+          "media": {
+            "type": "video",
+            "url": "https://dms.licdn.com/playlist/sample-video.mp4",
+            "thumbnail": "https://media.licdn.com/dms/image/video-thumbnail.jpg"
+          }
+        }
+      },
+      {
+        "urn": "7123456777777777777",
+        "full_urn": "urn:li:activity:7123456777777777777",
+        "posted_at": {
+          "date": "2025-05-12 16:45:30",
+          "relative": "5 days ago • Visible to anyone on or off LinkedIn",
+          "timestamp": 1745398901234
+        },
+        "text": "Sharing an interesting article I found.",
+        "url": "https://www.linkedin.com/posts/johndoe_article-activity-7123456777777777777-LmNo",
+        "post_type": "regular",
+        "author": {
+          "first_name": "John",
+          "last_name": "Doe",
+          "headline": "CEO at Example Company",
+          "username": "johndoe",
+          "profile_url": "https://www.linkedin.com/in/johndoe",
+          "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+        },
+        "stats": {
+          "total_reactions": 85,
+          "like": 70,
+          "support": 0,
+          "love": 5,
+          "insight": 10,
+          "celebrate": 0,
+          "comments": 12,
+          "reposts": 8
+        },
+        "article": {
+          "url": "https://example.com/sample-article",
+          "title": "Sample Article Title",
+          "subtitle": "example.com",
+          "thumbnail": "https://media.licdn.com/dms/image/article-thumbnail.jpg"
+        }
+      },
+      {
+        "urn": "7123456666666666666",
+        "full_urn": "urn:li:ugcPost:7123456666666666666",
+        "posted_at": {
+          "date": "2025-05-10 11:20:15",
+          "relative": "1 week ago • Visible to anyone on or off LinkedIn",
+          "timestamp": 1745218901234
+        },
+        "text": "Sharing this important document with my network.",
+        "url": "https://www.linkedin.com/posts/johndoe_document-activity-7123456666666666666-PqRs",
+        "post_type": "regular",
+        "author": {
+          "first_name": "John",
+          "last_name": "Doe",
+          "headline": "CEO at Example Company",
+          "username": "johndoe",
+          "profile_url": "https://www.linkedin.com/in/johndoe",
+          "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+        },
+        "stats": {
+          "total_reactions": 32,
+          "like": 28,
+          "support": 0,
+          "love": 2,
+          "insight": 2,
+          "celebrate": 0,
+          "comments": 5,
+          "reposts": 3
+        },
+        "document": {
+          "title": "Sample Document Title",
+          "page_count": 12,
+          "url": "https://media.licdn.com/dms/document/sample-document.pdf",
+          "thumbnail": "https://media.licdn.com/dms/image/document-thumbnail.jpg"
+        }
+      },
+      {
+        "urn": "7123455555555555555",
+        "full_urn": "urn:li:ugcPost:7123455555555555555",
+        "posted_at": {
+          "date": "2025-05-05 09:15:00",
+          "relative": "2 weeks ago • Visible to anyone on or off LinkedIn",
+          "timestamp": 1744778901234
+        },
+        "text": "Check out these photos from our recent company event!",
+        "url": "https://www.linkedin.com/posts/johndoe_event-activity-7123455555555555555-TuVw",
+        "post_type": "regular",
+        "author": {
+          "first_name": "John",
+          "last_name": "Doe",
+          "headline": "CEO at Example Company",
+          "username": "johndoe",
+          "profile_url": "https://www.linkedin.com/in/johndoe",
+          "profile_picture": "https://media.licdn.com/dms/image/profile-pic.jpg"
+        },
+        "stats": {
+          "total_reactions": 145,
+          "like": 120,
+          "support": 0,
+          "love": 20,
+          "insight": 0,
+          "celebrate": 5,
+          "comments": 18,
+          "reposts": 7
+        },
+        "media": {
+          "type": "images",
+          "url": "https://media.licdn.com/dms/image/main-image.jpg",
+          "images": [
+            {
+              "url": "https://media.licdn.com/dms/image/image1.jpg",
+              "width": 1280,
+              "height": 853
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/image2.jpg",
+              "width": 1280,
+              "height": 853
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/image3.jpg",
+              "width": 1280,
+              "height": 853
+            }
+          ]
+        }
+      }
+    ],
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5Ojc1MjM0NTU1NTU1NTU1NTU1NTUtMTc0NDc3ODkwMTIzNA=="
+  }
+}
