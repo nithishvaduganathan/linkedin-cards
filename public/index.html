@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Card Generator</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #020617;
+      color: white;
+    }
+    button {
+      padding: 14px 24px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+    .generate { background: #38bdf8; }
+    .download { background: #22c55e; }
+    p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div align="center">
+    <button class="generate" onclick="generate()">Generate Cards</button>
+    <button class="download" onclick="downloadZip()">Download Cards</button>
+    <p id="status"></p>
+  </div>
+
+  <script>
+    async function generate() {
+      document.getElementById("status").innerText = "Generating cards...";
+      const res = await fetch("/generate");
+      const data = await res.json();
+      document.getElementById("status").innerText = data.message;
+    }
+
+    function downloadZip() {
+      window.location.href = "/download";
+    }
+  </script>
+</body>
+</html>
