@@ -191,14 +191,12 @@
     },
     "text": "GitHub Copilot Coding Agents son instancias de Copilot que trabajan de forma autónoma, permitiendo tener varios agentes trabajando a la vez.\n\nSe usan estándares como Agents.md para dar indicaciones. Algunos agentes incluyen Dash (desarrollador Flutter), El Bicho (tests unitarios), La Cabra (CI/CD), y Semántidas (accesibilidad WCAG).\n\nCada agente se enfoca en su tarea sin interferir con otros, optimizando el código y garantizando su calidad.\n\nPodéis ver la charla completa de Alejandro Cerezo Contreras aquí: https://lnkd.in/ehmQn9gH\n\n#GitHubCopilot #Flutter #DesarrolloWeb #Testing #Accesibilidad",
     "url": "https://www.linkedin.com/posts/ghspain_githubcopilot-flutter-desarrolloweb-ugcPost-7409661185563901954-WnPl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGLDjfsB36ckdGENz7xWUmcG0e7s9bCMK6A",
-    "post_type": "regular",
+    "post_type": "repost",
     "author": {
-      "first_name": "Alejandro",
-      "last_name": "Cerezo Contreras",
-      "headline": "Software Engineer | 🤖 Squad Manager at Outlier | 🐙 Co-organizer of GitHub Community Spain | 🧠 AI Specialist | 🌐 DevOps",
-      "username": "alexcerezocontreras",
-      "profile_url": "https://www.linkedin.com/in/alexcerezocontreras?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAACYEB2gB1mgVEI0n35CVvEvTyPJuSvPEEJ4",
-      "profile_picture": "https://media.licdn.com/dms/image/v2/D4E03AQEEU9p_or8otg/profile-displayphoto-crop_800_800/B4EZtRqeRnIsAY-/0/1766601648519?e=1769040000&v=beta&t=jek6smOPgr4zE0ryKJJ3otmXDiVl3U36mObNoCYaySw"
+      "first_name": "GitHub",
+      "last_name": "Community España",
+      "headline": "343 followers",
+      "profile_url": "https://www.linkedin.com/company/ghspain/posts"
     },
     "stats": {
       "total_reactions": 3,
