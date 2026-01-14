@@ -15,7 +15,7 @@ const USER_REPO_PATH = process.cwd();
 
 dotenv.config();
 
-(async () => {
+export async function runGenerator() {
     try {
         // Load translations
         const translations = loadTranslations();
@@ -67,4 +67,5 @@ dotenv.config();
         console.error('Error:', error.message);
         process.exit(1);
     }
-})();
+    return "Cards generated successfully";
+}
