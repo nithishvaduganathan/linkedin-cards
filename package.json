@@ -2,12 +2,18 @@
   "name": "linkedin-cards",
   "version": "1.0.0",
   "type": "module",
+  "description": "LinkedIn card generator with UI and download option",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "generate": "node scripts/auto-generate.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
     "express": "^4.19.2",
-    "dotenv": "^16.4.5",
-    "archiver": "^5.3.2"
+    "dotenv": "^17.2.3",
+    "archiver": "^5.3.2",
+    "apify-client": "^2.21.0"
   }
 }
